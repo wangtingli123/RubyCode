@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>新增站点</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="js/jquery.js"></script>
+
+
+
+  </head>
+  <body >
+	<div style="margin-left:40px;">
+   <form>
+   <h1>New Station</h1>
+   <table style="margin-left">
+  <div class="form-group">
+    <label for="stationname">name</label>
+    <input type="text" class="form-control" id="name" placeholder="name">
+  </div>
+  
+	<div class="form-group">
+    <label for="address">address</label>
+    <select type="text" class="form-control" id="address" name="address">
+	<option value="bj">北京交通大学</option>
+	<option value="by">北京邮电大学</option>
+	<option value="xim">西直门</option>
+	<option value="dwy">动物园</option>
+	</select>
+  </div>
+
+  
+  <div class="form-group">
+    <label for="commant">comment</label>
+    <input type="text" class="form-control" id="comment" placeholder="comment">
+  </div>
+ <div class="form-group">
+    <label for="stationname">LAT</label>
+    <input type="text" class="form-control" id="LAT" placeholder="lat">
+  </div>  
+  <div class="form-group">
+    <label for="stationname">LNG</label>
+    <input type="text" class="form-control" id="LNG" placeholder="lng">
+  </div>  
+ 
+  <button type="submit" class="btn btn-default">Create Section</button>
+  <a href="#">back</a>
+  </table>
+</form>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	</div>
+  </body>
+</html>
+  

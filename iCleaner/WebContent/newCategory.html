@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+#allmap {
+	width: 95%;
+	height: 300px;
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+</style>
+
+<title>品类新增</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="js/jquery.js"></script>
+
+
+
+</head>
+<body style="margin-bottom: 30px;">
+	<div style="margin-left: 40px;">
+		<form action="CategoryManager?type=addcategory" method="post">
+			<h1>品类新增</h1>
+			<table style="">
+
+
+				<div class="form-group"> 
+					<label for="cid">品类ID</label> <input type="text" name="cid"
+						class="form-control" id="cid" placeholder="品类ID">
+				</div>
+				<div class="form-group">
+					<label for="cname">品类名称</label> <input type="text"
+						class="form-control" id="cname" name="cname" placeholder="品类名称">
+				</div>
+				<div class="form-group">
+					<label for="cprice">定价等级</label> <input type="text"
+						class="form-control" id="cprice" name="cprice" placeholder="定价等级">
+				</div>
+
+
+				<button type="submit" class="btn btn-default">新增品类</button>
+			</table>
+		</form>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+	</div>
+</body>
+</html>

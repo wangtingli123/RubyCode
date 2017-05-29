@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="js/jquery.js"></script>
+
+<script type="text/javascript">
+
+
+$(function(){	
+	//导航切换
+	$(".menuson .header").click(function(){
+		var $parent = $(this).parent();
+		$(".menuson>li.active").not($parent).removeClass("active open").find('.sub-menus').hide();
+		
+		$parent.addClass("active");
+		if(!!$(this).next('.sub-menus').size()){
+			if($parent.hasClass("open")){
+				$parent.removeClass("open").find('.sub-menus').hide();
+			}else{
+				$parent.addClass("open").find('.sub-menus').show();	
+			}
+			
+			
+		}
+	});
+	
+	// 三级菜单点击
+	$('.sub-menus li').click(function(e) {
+        $(".sub-menus li.active").removeClass("active")
+		$(this).addClass("active");
+    });
+	
+	$('.title').click(function(){
+		var $ul = $(this).next('ul');
+		$('dd').find('.menuson').slideUp();
+		if($ul.is(':visible')){
+			$(this).next('.menuson').slideUp();
+		}else{
+			$(this).next('.menuson').slideDown();
+		}
+	});
+})	
+</script>
+
+
+</head>
+
+<body style="background:#fff3e1;">
+	<div class="lefttop"><span></span>吴彦祖洗衣后台管理系统</div>
+    <div style="float:left;">
+    <dl class="leftmenu">
+	
+        
+    <dd>
+    <div class="title">
+    <span><img src="images/leftico01.png" /></span>站点管理
+    </div>
+    	<ul class="menuson">
+        
+        <li>
+            <div class="header">
+            <cite></cite>
+            <a href="newstation.html" target="rightFrame">新增站点</a>
+            <i></i>
+            </div>
+           
+        </li>
+		
+		<li>
+            <div class="header">
+            <cite></cite>
+            <a href="stationlist.html" target="rightFrame">站点列表</a>
+            <i></i>
+            </div>
+           
+        </li>
+        
+      
+        </ul>    
+    </dd>
+        
+    
+    <dd>
+    <div class="title">
+    <span><img src="images/leftico02.png" /></span>取送人员管理
+    </div>
+    <ul class="menuson">
+        <li><cite></cite><a href="addsendpeople.html" target="rightFrame">添加取送人员</a><i></i></li>
+        <li><cite></cite><a href="sendpeoplelist.html" target="rightFrame">查看\编辑</a><i></i></li>
+      
+        </ul>     
+    </dd> 
+    
+    
+    <dd><div class="title"><span><img src="images/leftico03.png" /></span>编辑器</div>
+    <ul class="menuson">
+        <li><cite></cite><a href="#">自定义</a><i></i></li>
+        <li><cite></cite><a href="#">常用资料</a><i></i></li>
+        <li><cite></cite><a href="#">信息列表</a><i></i></li>
+        <li><cite></cite><a href="#">其他</a><i></i></li>
+    </ul>    
+    </dd>  
+    
+    
+    <dd><div class="title"><span><img src="images/leftico04.png" /></span>日期管理</div>
+    <ul class="menuson">
+        <li><cite></cite><a href="#">自定义</a><i></i></li>
+        <li><cite></cite><a href="#">常用资料</a><i></i></li>
+        <li><cite></cite><a href="#">信息列表</a><i></i></li>
+        <li><cite></cite><a href="#">其他</a><i></i></li>
+    </ul>
+    
+    </dd>   
+    
+    </dl></div>
+	 <div style="margin-left:200px;">
+	 <image src="images/bg1.jpg" style="height:500px"/>
+	 </div>
+</body>
+</html>
